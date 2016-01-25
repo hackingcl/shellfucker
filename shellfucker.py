@@ -3,7 +3,6 @@
 import os
 import sys
 from termcolor import colored
-import time
 import commands
 # verificamos si existe el parametro del directorio
 if len(sys.argv) == 1:
@@ -16,7 +15,7 @@ directorio = sys.argv[2]
 try:
 	# Total de archivos
 	total = []
-	# funcion para crear archivo de resultado
+	# Funcion para crear archivo de resultado
 	def crear(nombre):
 		# Creamos el archivo con el resultado
 		resultado = open(nombre, 'a')
